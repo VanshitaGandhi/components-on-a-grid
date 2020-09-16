@@ -1,5 +1,9 @@
 html {
   box-sizing: border-box;
+  font-style: "Patua One", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  background-color: #f2f1ed;
 }
 
 *,
@@ -15,29 +19,24 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
-}
-
-header {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1rem;
 }
 
-header: n-th child(2) {
+.pano {
   grid-column: 1/-1;
   grid-row: 1/-1;
 }
 
-header: n-th child(1) {
+header:nth-child(1) {
   grid-column: 1;
   grid-row: 1/-1;
   width: 14rem;
   z-index: 1;
 }
 
-header: n-th child(3) {
+header:nth-child(3) {
   list-style-type: none;
-  font-size: 2rem;
   color: #fff;
   display: flex;
   grid-column: 1/-1;
@@ -48,23 +47,31 @@ header: n-th child(3) {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img img-2"
+    "h2 h-2"
+    "p p-2";
   gap: 1rem;
 }
 
-main: n-th child(1){
+/* figure:nth-child(1) {
+  grid-area: img;
+}
+
+figure:nth-child(2) {
+  grid-area: img-2;
+} */
+
+main:nth-child(1){
   grid-column: 1;
   grid-row: 2;
 }
 
-main: n-th child(2){
+main:nth-child(2){
   grid-column: 2;
   grid-row: 2;
 }
 
 h2 {
   color: #30658d;
-}
-
-figcaption {
-  font-size: 2rem;
 }
