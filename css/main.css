@@ -28,14 +28,14 @@ header {
   grid-row: 1/-1;
 }
 
-header:nth-child(1) {
+.logo {
   grid-column: 1;
   grid-row: 1/-1;
   width: 14rem;
   z-index: 1;
 }
 
-header:nth-child(3) {
+nav ul {
   list-style-type: none;
   color: #fff;
   display: flex;
