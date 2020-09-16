@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-style: "Patua One", sans-serif;
+  font-family: Georgia, serif;
   font-size: 2rem;
   line-height: 1.5;
   background-color: #f2f1ed;
@@ -10,6 +10,10 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
 }
 
 img {
@@ -37,6 +41,7 @@ header {
 
 nav ul {
   list-style-type: none;
+  font-family: "Patua One", sans-serif;
   color: #fff;
   display: flex;
   grid-column: 1/-1;
@@ -62,16 +67,17 @@ figure:nth-child(2) {
   grid-area: img-2;
 } */
 
-main:nth-child(1){
+main:nth-child(1) {
   grid-column: 1;
   grid-row: 2;
 }
 
-main:nth-child(2){
+main:nth-child(2) {
   grid-column: 2;
   grid-row: 2;
 }
 
 h2 {
+  font-family: "Patua One", sans-serif;
   color: #30658d;
 }
