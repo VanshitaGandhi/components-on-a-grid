@@ -16,3 +16,24 @@ header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
 }
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pano {
+  grid-column: 1/-1;
+  grid-row:1/-1;
+}
+
+nav ul {
+  grid-column: 1/-1;
+  z-index: 1;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+}
