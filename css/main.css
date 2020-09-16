@@ -17,25 +17,25 @@ header {
   display: contents;
 }
 
-.banner {
+header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1rem;
 }
 
-.logo {
+header: n-th child(2) {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+header: n-th child(1) {
   grid-column: 1;
   grid-row: 1/-1;
   width: 14rem;
   z-index: 1;
 }
 
-.pano {
-  grid-column: 1/-1;
-  grid-row:1/-1;
-}
-
-nav ul {
+header: n-th child(3) {
   list-style-type: none;
   font-size: 2rem;
   color: #fff;
