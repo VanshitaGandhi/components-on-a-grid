@@ -65,6 +65,8 @@ nav ul {
   font-family: "Patua One", sans-serif;
   font-size: 2rem;
   display: flex;
+  justify-content: space-around;
+  max-width: 28rem;
 }
 
 a {
